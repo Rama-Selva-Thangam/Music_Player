@@ -16,4 +16,4 @@ This is a simple Music Player app built using HTML, CSS, and JavaScript. It allo
 - JavaScript
 
 ## Usage
-Link - 
+Link - https://rama-selva-thangam.github.io/Music_Player/MusicPlayer.html
