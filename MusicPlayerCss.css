@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(45deg, #ffffff, #383838);
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#music-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(45deg, #ffa2a2, #ff93ef);
+  border-radius: 1rem;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  height: 80vh;
+  width: 30vw;
+  margin: 0 auto;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  margin-bottom: 1rem;
+}
+
+#song-name {
+  color: #000000;
+  margin-bottom: 1rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#song-name:hover {
+  scale: 1.3;
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+}
+
+audio {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#song-bar {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+#song-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ff3232;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 40px 0;
+  transition: 0.5s ease;
+}
+#song-bar::-webkit-slider-thumb:hover{
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #5222ff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 40px 0;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+nav button {
+  padding: 0.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-size: large;
+}
+
+nav button:hover {
+  transform: scale(1.2);
+  font-size: large;
+  background: linear-gradient(#ff5151, #ff0000);
+  color: #ecf0f1;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #000000;
+  transition: 0.5s ease;
+}
+h2:hover {
+  font-weight: bold;
+  color: #ffff;
+}
+
+.favorite {
+  color: #ff0000;
+}
+
+.favorite:hover {
+  color: #fbff00;
+}
